@@ -1,0 +1,105 @@
+.logo {
+    height: 2em;
+    padding: 1.5em;
+}
+
+@keyframes logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    a:nth-of-type(2) .logo {
+        animation: logo-spin infinite 20s linear;
+    }
+}
+
+.card {
+    padding: 0em 4em;
+}
+
+a {
+    text-decoration: inherit;
+    color: lightgray;
+}
+
+body {
+    margin: 0;
+    /*display: flex;
+    place-items: center;*/
+    min-width: 320px;
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0em 2em;
+    background: linear-gradient(
+        90deg,
+        rgba(21, 21, 22, 0) 0%,
+        rgba(107, 106, 109, 0.08) 83.43%
+    );
+    border-bottom: 1px solid rgba(107, 106, 109, 0);
+}
+
+ul {
+    display: flex;
+    gap: 20px;
+}
+
+main {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.background {
+    position: absolute;
+    z-index: -1;
+}
+
+h1 {
+    font-size: 64px;
+    font-weight: 500;
+    line-height: 64px;
+    margin: 3em 35% 0em;
+}
+
+h1 span {
+    background: linear-gradient(90deg, #00d066 10.2%, #9cff9c 47.84%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.btnStart {
+    border-radius: 8px;
+    border: transparent;
+    padding: 0.6em 1.2em;
+    font-size: 1em;
+    font-weight: 500;
+    font-family: inherit;
+    background-color: rgba(0, 208, 102, 0.1);
+    cursor: pointer;
+    color: #00d066;
+}
+
+.btnMore {
+    border-radius: 8px;
+    border: 1px solid #ffffff;
+    font-size: 1em;
+    font-weight: 500;
+    cursor: pointer;
+    transition: border-color 0.25s;
+    background-color: transparent;
+}
+
+.cta {
+    width: 80%;
+}
