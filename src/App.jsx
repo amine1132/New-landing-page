@@ -8,6 +8,8 @@ import teams from "./assets/Teams.svg";
 import backers from "./assets/Backers.svg";
 import arrow from "./assets/arrow.svg";
 import cta from "./assets/cta.svg";
+import team from "./assets/theteam.svg";
+import icon from "./assets/Icon.svg";
 
 function App() {
   return (
@@ -41,13 +43,15 @@ function App() {
           </ul>
           <div>
             <button className="btnStart">Get Started</button>
-            <button className="btnMore">...</button>
+            <button className="btnMore">
+              <img src={icon} alt="" />
+            </button>
           </div>
         </nav>
       </header>
       <main>
         <img src={background} alt="" className="background" />
-        <h1>
+        <h1 className="first-title">
           A <span>New Era</span> For Crypto
         </h1>
         <div className="card">
@@ -65,14 +69,14 @@ function App() {
         <p>bandeau défilante</p>
       </section>
       <section>
-        <div>
+        <div className="section1">
           <h1>Solutions for everyone</h1>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit.
             Consectetur, debitis.
           </p>
         </div>
-        <div>
+        <div className="section2">
           <div>
             <p>Bitocoin Screener</p>
             <p>Lorem ipsum dolor sit amet.</p>
@@ -91,16 +95,20 @@ function App() {
           </div>
         </div>
       </section>
-      <img src={backers} alt="" />
+      <div className="team">
+        <img src={team} alt="" />
+      </div>
       <footer>
-        <p>JOIN THE FOUNDATION</p>
-        <p>NAKAYOSHI</p>
-        <p>
-          Join the Foundation and play an active part in building a better
-          world. Let's work together to build a future of progress, inclusion
-          and success.
-        </p>
-        <button>Be Part Of The Future</button>
+        <div className="footer">
+          <h1>JOIN THE FOUNDATION</h1>
+          <h2>NAKAYOSHI</h2>
+          <p>
+            Join the Foundation and play an active part in building a better
+            world. Let's work together to build a future of progress, inclusion
+            and success.
+          </p>
+          <button>Be Part Of The Future</button>
+        </div>
       </footer>
     </>
   );
