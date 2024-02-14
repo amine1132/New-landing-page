@@ -10,6 +10,11 @@ import arrow from "./assets/arrow.svg";
 import cta from "./assets/cta.svg";
 import team from "./assets/theteam.svg";
 import icon from "./assets/Icon.svg";
+import greenarrow from "./assets/greenarrow.svg";
+import graph from "./assets/graph.svg";
+import thunder from "./assets/thunder.svg";
+import rome from "./assets/rome.svg";
+import tools from "./assets/tools.svg";
 
 function App() {
     return (
@@ -65,43 +70,67 @@ function App() {
                 </div>
                 <img src={cta} alt="" className="cta" />
             </main>
-            <section>
+            <section className="dropdownBanner">
                 <p>bandeau défilante</p>
             </section>
             <section>
                 <div className="section1">
-                    <h1>Solutions for everyone</h1>
+                    <h2>Solutions for everyone</h2>
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         Consectetur, debitis.
                     </p>
                 </div>
-                <div className="section2">
-                    <div>
-                        <p>Bitocoin Screener</p>
-                        <p>Lorem ipsum dolor sit amet.</p>
-                    </div>
-                    <div>
-                        <p>Bitocoin Screener</p>
-                        <p>Lorem ipsum dolor sit amet.</p>
-                    </div>
-                    <div>
-                        <p>Bitocoin Screener</p>
-                        <p>Lorem ipsum dolor sit amet.</p>
-                    </div>
-                    <div>
-                        <p>Bitocoin Screener</p>
-                        <p>Lorem ipsum dolor sit ameta.</p>
-                    </div>
-                </div>
+                <ul className="section2">
+                    <li>
+                        <div>
+                            <img src={graph}></img>
+                            <h3>Bitocoin Screener</h3>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                        </div>
+                        <p>
+                            Q1 2024 <img src={greenarrow} alt="" />
+                        </p>
+                    </li>
+                    <li>
+                        <div>
+                            <img src={thunder}></img>
+                            <h3>Bitocoin Screener</h3>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                        </div>
+                        <p>
+                            Q1 2024 <img src={greenarrow} alt="" />
+                        </p>
+                    </li>
+                    <li>
+                        <div>
+                            <img src={rome}></img>
+                            <h3>Bitocoin Screener</h3>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                        </div>
+                        <p>
+                            Q1 2024 <img src={greenarrow} alt="" />
+                        </p>
+                    </li>
+                    <li>
+                        <div>
+                            <img src={tools}></img>
+                            <h3>Bitocoin Screener</h3>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                        </div>
+                        <p>
+                            Q1 2024 <img src={greenarrow} alt="" />
+                        </p>
+                    </li>
+                </ul>
             </section>
             <div className="team">
                 <img src={team} alt="" />
             </div>
             <footer>
                 <div className="footer">
-                    <h1>JOIN THE FOUNDATION</h1>
-                    <h2>NAKAYOSHI</h2>
+                    <h2>JOIN THE FOUNDATION</h2>
+                    <h3>NAKAYOSHI</h3>
                     <p>
                         Join the Foundation and play an active part in building
                         a better world. Let's work together to build a future of
